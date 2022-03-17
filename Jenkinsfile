@@ -3,6 +3,7 @@ agent any
 stages {
 stage ("git clone") {
 steps {
+sh "rm -rf flipkart-"
 sh "git clone https://github.com/dnyanesh12345678/flipkart-.git"
 }
 }
